@@ -68,8 +68,7 @@ router.delete('/:id', function(req, res) {
 				req.flash('success', 'Pessoa removida com sucesso!');
 			}
 			res.redirect('/people');
-		}
-	);
+		});
 });
 
 module.exports = router;
